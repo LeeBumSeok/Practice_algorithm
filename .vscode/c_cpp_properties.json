@@ -3,7 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
             ],
             "defines": [
                 "_DEBUG",
@@ -12,15 +12,15 @@
             ],
             "browse": {
                 "path": [
-                    "C:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include",
-                    "C:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include-fixed",
-                    "C:\\mingw64\\include",
+                    "C:\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include",
+                    "C:\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include-fixed",
+                    "C:\\MinGW\\include",
                     "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
             },
-            "compilerPath": "C:\\mingw64\\bin\\gcc.exe",
+            "compilerPath": "C:\\MinGW\\bin\\g++.exe",
             "cStandard": "gnu17",
             "cppStandard": "gnu++14",
             "intelliSenseMode": "windows-gcc-x64",
