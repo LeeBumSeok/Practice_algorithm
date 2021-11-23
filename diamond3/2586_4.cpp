@@ -19,14 +19,28 @@ int main() {
     vector<pair<int, int>> dp[(P + F) * 2];
 
     while (!pq.empty()) {
-        pq.top().second ? dp[--pos].push_back(pq.top()) : dp[pos++].push_back(pq.top()), pq.pop();
+        if (pq.top().second) {
+            dp[--pos].push_back(pq.top());
+            // cout << pos << endl;
+        }
+
+        else {
+            dp[pos++].push_back(pq.top());
+            // cout << pos << endl;
+        }
+
+        // cout << pos << endl;
+        pq.pop();
     }
 
     for (int i = 0; i < (P + F) * 2; i++) {
         int s = 0, m;
+        if (dp[i].size() % 2) {
+            cout << dp[i].size() << endl;
+            for (int j = 0; j < dp[i].size(); j++) cout << dp[i][j].first << endl;
+        }
 
         for (int j = 1; j < dp[i].size(); j += 2) s += dp[i][j].first - dp[i][j - 1].first;
-
         m = s;
         if (dp[i].size() % 2) {
             for (int j = dp[i].size() - 1; j > 1; j -= 2) {
