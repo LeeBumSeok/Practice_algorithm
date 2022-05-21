@@ -5,6 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "silver1.Main",
+      "projectName": "Practice_algorithm_5616ab02"
+    },
+    {
       "name": "Python: Current File",
       "type": "python",
       "request": "launch",
