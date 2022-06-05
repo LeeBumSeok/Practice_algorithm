@@ -8,6 +8,13 @@
       "type": "java",
       "name": "Launch Main",
       "request": "launch",
+      "mainClass": "gold5.Main",
+      "projectName": "Practice_algorithm_5616ab02"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
       "mainClass": "silver1.Main",
       "projectName": "Practice_algorithm_5616ab02"
     },
